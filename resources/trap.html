@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+
+<style type="text/css">
+.tab { margin-left: 200px; }
+</style>
+<style>
+TH {
+    color: maroon;
+    font-size:medium;
+    text-align: center;
+}
+w1 {
+    color: red;
+    margin-left: 40px;
+    font-size:large;
+}
+TH, TD {
+      text-align: center;
+} 
+</style>
+
+        
+        <script src = "/resources/jquery-1.11.2.js"></script>
+        <script src = "/resources/jquery-ui.min.js"></script>
+        <script src = "/resources/jquery.switchButton.js"></script>
+        <link  rel="stylesheet" type="text/css" href="/resources/jquery-ui.min.css">
+        <link  rel="stylesheet" type="text/css" href="/resources/jquery.switchButton.css">
+        <script src="/resources/autobahn.min.jgz"></script>
+        <script src="/resources/pubscribe_frontend.js"></script>
+        <script src="/resources/autobahnjs_rpc_caller.js"></script>
+       
+    
+</head>
+<body>
+    
+     
+    <div class="demo" id="labels">       
+        <div class="switch-wrapper">
+
+           <TABLE cellpadding="5" cellspacing="5" bgcolor="beige">
+                <CAPTION><w1> - Trap Status - </w1></CAPTION>
+                <TR id="row1">
+                   <TH>Identifier<TH>Status<TH>Date<TH>Time<TH>Battery
+                   <TR id="row2">
+                   <TD id="macadrs"></TD><TD><input type="checkbox" id="trap01" value="1" disabled/></TD><TD id="date"></TD><TD id="time"></TD><TD id="volts">v</TD>
+                   <TR id="row3">
+                   <TD>f1d4  <TD><input type="checkbox" name="test1" value="1" disabled/>  <TD> -- <TD> -- <TD>3.9v
+                   <TR id="row4">
+                   <TD>aace  <TD><input type="checkbox" name="test1" value="1" disabled/>  <TD> -- <TD> -- <TD>4.2v
+                   <TR id="row5">
+                   <TD>1339  <TD><input type="checkbox" name="test1" value="1" disabled/>  <TD> -- <TD> -- <TD>4.0v
+                   <TR id="row6">
+                   <TD>7ffe  <TD><input type="checkbox" name="test1" value="1" disabled/>  <TD> -- <TD> -- <TD>4.0v
+                   <TR id="row7">
+                   <TD>6e44  <TD><input type="checkbox" name="test1" value="1" disabled>  <TD> -- <TD> -- <TD>3.8v
+                   <TR id="row8">
+                   <TD>33ca  <TD><input type="checkbox" name="test1" value="1" disabled/>  <TD> -- <TD> -- <TD>4.0v
+            </TABLE> 
+
+        </div>
+        
+      </div> 
+   
+      
+    <pre><script>
+          $("input[type=checkbox]").switchButton({ width: 60, height: 20,  button_width: 25, on_label: 'SPRUNG', off_label: 'SET'});
+     </script></pre>
+
+</body>
+</html>

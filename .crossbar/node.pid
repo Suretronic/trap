@@ -1,0 +1,21 @@
+{
+   "pid": 3092, 
+   "argv": [
+      "/home/ron/pypy-venv/bin/crossbar", 
+      "start", 
+      "--cbdir", 
+      "/home/ron/pypy-venv/.crossbar", 
+      "--logdir", 
+      "/home/ron/pypy-venv/.crossbar/log"
+   ], 
+   "options": {
+      "cbdir": "/home/ron/pypy-venv/.crossbar", 
+      "config": "/home/ron/pypy-venv/.crossbar/config.json", 
+      "logdir": "/home/ron/pypy-venv/.crossbar/log", 
+      "logtofile": false, 
+      "loglevel": "info", 
+      "logformat": "colour", 
+      "command": "start", 
+      "reactor": null
+   }
+}

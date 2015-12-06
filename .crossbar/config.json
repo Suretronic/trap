@@ -1,0 +1,50 @@
+{
+   "controller": {
+   },
+   "workers": [
+      {
+         "type": "router",
+         "realms": [
+            {
+               "name": "trapsensor",
+               "roles": [
+                  {
+                     "name": "anonymous",
+                     "permissions": [
+                        {
+                           "uri": "*",
+                           "publish": true,
+                           "subscribe": true,
+                           "call": true,
+                           "register": true
+                        }
+                     ]
+                  }
+               ]
+            }
+         ],
+         "transports": [
+            {
+               "type": "web",
+               "endpoint": {
+                  "type": "tcp",
+                  "port": 8080
+               },
+               "paths": {
+                  "/": {
+                     "type": "static",
+                     "directory": "/home/ron/pypy-venv/resources"
+                  },
+                  "ws": {
+                     "type": "websocket"
+                  },
+                  "resources": {
+                     "type": "static",
+                     "directory": "/home/ron/pypy-venv/resources"
+                  }
+               }
+            }
+         ]
+      }
+   ]
+}
